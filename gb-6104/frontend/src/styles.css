@@ -98,6 +98,10 @@ td a[aria-current=true] { font-weight: 750; }
 .evidence select { width: fit-content; max-width: 100%; }
 .signature { border-left: .2rem solid var(--accent); padding-left: .85rem; }
 .signature p { margin: .35rem 0; overflow-wrap: anywhere; }
+.bill-card { display: grid; gap: .75rem; }
+.bill-heading { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline; justify-content: space-between; }
+.actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+.actions .feedback { flex-basis: 100%; }
 @media (max-width: 1050px) {
   .shell { grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr); }
   .split { grid-template-columns: 1fr; }

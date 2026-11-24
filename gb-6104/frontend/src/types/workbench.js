@@ -2,6 +2,7 @@
  * @typedef {{id:number, code:string, title:string, description:string, payload:Object, created_by:string}} Case
  * @typedef {{id:number, case_id:number, case_title:string, status:string, parameter:number, result:Object|null}} Run
  * @typedef {{run_id:number, actor:string, note:string, created_at:number}} Review
+ * @typedef {{id:number, run_id:number, receipt_no:string, review_day:number, review_date:string, total_amount_cents:number, document:Object, items:Array, created_at:number}} HandoverBill
  */
 
 /** Reject a malformed configuration before rendering its navigation. */

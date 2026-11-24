@@ -10,6 +10,9 @@ export const api = {
   enqueue: (id, data) => request(`/cases/${id}/runs`, {method: "POST", data}),
   review: id => request(`/runs/${id}/review`),
   submitReview: (id, data) => request(`/runs/${id}/review`, {method: "POST", data}),
+  handover: id => request(`/runs/${id}/handover`),
+  submitHandover: (id, data) => request(`/runs/${id}/handover`, {method: "POST", data: data || {}}),
+  downloadHandover: id => request(`/runs/${id}/handover/download`, {raw: true}),
   export: id => request(`/runs/${id}/export`, {raw: true}),
   audit: () => request("/audit", {signal: AbortSignal.timeout(5000)}),
 };
